@@ -13,6 +13,7 @@ module.exports = defineConfig({
       return config;
     },
     specPattern: 'cypress/e2e/**/*.feature',
-    baseUrl: 'https://demoqa.com/'
+    baseUrl: 'https://demoqa.com/',
+    baseUrlWeb:'https://demoqa.com/'
   },
 });
