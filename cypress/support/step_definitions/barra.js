@@ -8,13 +8,15 @@ Given('que eu estou na página da barra de progresso', () => {
 
 When('eu clico no botão Start a barra de progresso atinge 24', () => {
         cy.get("#startStopButton").click();
+          cy.screenshot()
   cy.get('[role="progressbar"]').should('have.text', '24%');
           cy.get("#startStopButton").click();
-
+  cy.screenshot()
 });
 
 Then('eu clico no botão para fazer o Reset', () => {
-
+  cy.screenshot()
   cy.get("#startStopButton").click();
+    cy.screenshot()
 
 });

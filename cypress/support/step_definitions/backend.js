@@ -19,6 +19,7 @@ When('eu preencho todos os campos obrigatórios', () => {
 
         cy.log('Corpo da Resposta:', JSON.stringify(response.body));
         idusuario = (response.body['userID'])
+          cy.screenshot()
     });
 });
 
@@ -26,6 +27,7 @@ Then('eu devo ver uma mensagem de sucesso', () => {
     cy.get('@apiResponseCreateUser').then((response) => {
 
         expect(response.status).to.eq(201);
+          cy.screenshot()
 
     });
 });
@@ -43,6 +45,7 @@ When('eu preencho  os dados do usuario', () => {
 
 
         cy.log('Corpo da Resposta:', JSON.stringify(response.body));
+          cy.screenshot()
     });
 });
 
@@ -52,6 +55,7 @@ Then('eu deve receber um token', () => {
         expect(response.status).to.eq(200);
         cy.log('Token', JSON.stringify(response.body['token']));
         Token = (response.body['token'])
+          cy.screenshot()
 
     });
 });
