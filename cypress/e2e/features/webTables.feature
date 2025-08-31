@@ -1,7 +1,5 @@
 Feature: Gerenciar registros e navegação na tabela
 
-  Para testar a paginação da tabela após adicionar registros
-  Eu, como usuário, quero adicionar múltiplos registros e navegar para a próxima página.
 
   Scenario: Adicionar 12 registros e navegar para a próxima página
     Given que eu estou na página de "Web Tables"
